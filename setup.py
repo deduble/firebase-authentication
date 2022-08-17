@@ -1,5 +1,5 @@
 import setuptools
-from packagename.version import Version
+from firebase_authentication.version import Version
 
 
 setuptools.setup(name='firebase-authentication',
