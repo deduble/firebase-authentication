@@ -11,6 +11,10 @@ class FirebaseCustomAuthentication:
         self.db = firestore.client()
         self.collection = self.db.collection(app_id)
 
+    def save_user(self, uid, access_token):
+        user = self.collection.document(uid).create({'access_token': access_token})
+        return user
+
     def get_user(self, uid):
         user = self.collection.document(uid).get()
         return user
