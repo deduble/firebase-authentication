@@ -2,7 +2,7 @@ import setuptools
 from firebase_authentication.version import Version
 
 
-setuptools.setup(name='firebase-authentication',
+setuptools.setup(name='firebase_authentication',
                  version=Version('1.0.0').number,
                  description='Firebase Authentication Helper',
                  long_description=open('README.md').read().strip(),
